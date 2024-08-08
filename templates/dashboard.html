@@ -74,8 +74,7 @@
                         document.getElementById('result').innerText = `Error: ${data.error}`;
                     } else {
                         document.getElementById('result').innerText =
-                            `Time Difference: ${data.hours} hours, ${data.minutes} minutes, ${data.seconds} seconds
-                            \nLocal Time at Target: ${data.local_time_at_target}`;
+                            `Time Difference: ${data.hours} hours, ${data.minutes} minutes, ${data.seconds} seconds;
                     }
                 })
                 .catch(error => {
