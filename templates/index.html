@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVFB630QCV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KVFB630QCV');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/reset.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
+    <title>TimeSync: Your Ultimate Productivity Tool</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="content">
+            <a href="index.html" class="desktop logo">TimeSync</a>
+            <nav class="desktop">
+                <ul>
+                    <li><a href="#features-section">Features</a></li>
+                    <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                   
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <ul>
+                    <li class="logo"><a href="#"><img src="../static/resources/Deadline Dash Logo.png"></a></li>
+                 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        <div id="sign-up-section" class="banner">
+            <div id="sign-up-cta">
+                <div class="content center">
+                    <div class="header">
+                        <h2 class="striking"><strong>TimeSync:</strong> Your Ultimate Productivity Tool</h2>
+                        <p>Effortlessly manage and sync all your deadlines in one place. Stay on top of
+                            your tasks and never miss a deadline again</p>
+                    </div>
+                    <div class="email">
+                        <div class="button">Start Syncing Deadlines</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="features-section">
+            <div class="feature">
+                <div class="center">
+                    <div class="image-container">
+                        <img src="../static/resources/feature1.jpg" />
+                    </div>
+                    <div class="content">
+                        <h2>Seamless Syncing</h2>
+                        <h3>Sync all your deadlines from various sources into one unified platform</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="center">
+                    <div class="image-container">
+                        <img src="../static/resources/feature-22.jpg" />
+                    </div>
+                    <div class="content">
+                        <h2>User-Friendly Interface</h2>
+                        <h3>An intuitive and easy-to-use interface designed to enhance your productivity</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <span>© 2024 TimeSync, All Rights Reserved</span>
+                <span>Designed for HeadStarter Hackathon</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
