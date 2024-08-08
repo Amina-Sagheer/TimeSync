@@ -43,14 +43,14 @@ def sync_duration():
         minutes, seconds = divmod(remainder, 60)
 
         # Local time at the target timezone
-        local_time_at_target = target_time_utc.astimezone(local_tz)
-        local_time_str = local_time_at_target.strftime("%Y-%m-%d %H:%M:%S")
+        # local_time_at_target = target_time_utc.astimezone(local_tz)
+        # local_time_str = local_time_at_target.strftime("%Y-%m-%d %H:%M:%S")
 
         return jsonify({
             'hours': hours,
             'minutes': minutes,
             'seconds': seconds,
-            'local_time_at_target': local_time_str
+            # 'local_time_at_target': local_time_str
         })
     except Exception as e:
         return jsonify({'error': str(e)}), 500
