@@ -48,7 +48,7 @@ This web application addresses the challenges of global time management by provi
 
 ## Live Application
 
-View the live application at: [Your Deployed Application](https://deadlinedash.vercel.app/)
+View the live application at: [Application](https://deadlinedash.vercel.app/)
 
 
 ## License
